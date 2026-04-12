@@ -172,7 +172,12 @@ footer {
   padding: 15px;
   text-align: center;
 }
-
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 /* ===== ABOUT SECTION ===== */
@@ -483,6 +488,14 @@ animation: fillBar 2s ease-in-out forwards, move 2s linear infinite;
   transition: 0.3s;
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+  .education-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 
@@ -732,4 +745,11 @@ html, body {
 
 .contact-box-item:hover a {
   color: rgb(252, 253, 250);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
 }
