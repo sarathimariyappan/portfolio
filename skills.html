@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarathi | Skills</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>PORTFOLIO</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Education.html">Education</a>
+    <a href="skills.html" class="active">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="Credentials.html">Credentials</a>  
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="skills-section">
+
+  <h2 class="skills-title">My Skills</h2>
+
+  <div class="skills-wrapper">
+
+    <!-- Languages -->
+    <div class="skills-category">
+      <h3 class="category-title">Languages</h3>
+
+      <div class="skill">
+        <div class="skill-name">Java <span>75%</span></div>
+        <div class="progress-bar">
+          <div class="progress-fill teal" style="--percent:75%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">HTML <span>80%</span></div>
+        <div class="progress-bar">
+          <div class="progress-fill green"style="--percent:80%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">CSS <span>80%</span></div>
+        <div class="progress-bar">
+          <div class="progress-fill blue" style="--percent:80%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Verilog <span>65%</span></div>
+        <div class="progress-bar">
+          <div class="progress-fill gray" style="--percent:65%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="skills-category">
+      <h3 class="category-title">Tools Handling</h3>
+
+      <div class="skill">
+        <div class="skill-name">Xilinx Vivado <span>75%</span></div>
+        <div class="progress-bar">
+          <div class="progress-fill yellow" style="--percent:75%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Altium <span>50%</span></div>
+        <div class="progress-bar">
+          <div class="progress-fill red" style="--percent:50%"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">ANSYS <span>80%</span></div>
+        <div class="progress-bar">
+          <div class="progress-fill dark" style="--percent:80%"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll(".progress-fill").forEach(function(bar) {
+    bar.style.width = bar.getAttribute("data-percent");
+  });
+</script>
+
+</body>
+</html>
