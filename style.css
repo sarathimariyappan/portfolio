@@ -172,12 +172,7 @@ footer {
   padding: 15px;
   text-align: center;
 }
-/* Mobile */
-@media (max-width: 768px) {
-  .hero-container {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 
 /* ===== ABOUT SECTION ===== */
@@ -234,7 +229,7 @@ header {
 .about-title {
   font-size: 30px;
   color: #0c6f6f;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 15px;
 }
 
@@ -246,7 +241,7 @@ header {
 }
 .column1 {
   margin-left: 270px;   /* side movement */
-  margin-top: -50px;    /* top movement */
+  margin-top: -80px;    /* top movement */
 }
 
 .column1 p {
@@ -487,14 +482,6 @@ animation: fillBar 2s ease-in-out forwards, move 2s linear infinite;
   background-color: #f1f1f1;
   transition: 0.3s;
 }
-
-/* Mobile */
-@media (max-width: 768px) {
-  .education-container {
-    grid-template-columns: 1fr;
-  }
-}
-
 
 
 
@@ -745,11 +732,4 @@ html, body {
 
 .contact-box-item:hover a {
   color: rgb(252, 253, 250);
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
 }
